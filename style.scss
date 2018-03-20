@@ -95,7 +95,7 @@ div {
     content: '.';
   }
   &.mountain-1 {
-    bottom: 0;
+    top: 200px;
     left: -80px;
     border-radius: 20px;
     width: 350px;
@@ -111,14 +111,14 @@ div {
   }
   &.mountain-2 {
     z-index: 30;
-    bottom: 20%;
+    top: 230px;
     left: 145px;
     border-radius: 15px;
     width: 200px;
     height: 200px;
     &::before {
-      top: -150px;
-      left: -150px;
+      top: -120px;
+      left: -120px;
     }
     &::after {
       top: -40px;
@@ -127,7 +127,7 @@ div {
   }
   &.mountain-3 {
     z-index: 30;
-    bottom: 12%;
+    top: 220px;
     left: 450px;
     border-radius: 20px;
     width: 250px;
@@ -138,12 +138,12 @@ div {
     }
     &::after {
       top: -60px;
-      left: -210px;
+      left: -160px;
     }
   }
   &.mountain-4 {
     z-index: 30;
-    bottom: 25%;
+    top: 260px;
     left: 605px;
     border-radius: 10px;
     width: 150px;
@@ -153,13 +153,13 @@ div {
       left: -80px;
     }
     &::after {
-      top: -200px;
+      top: -140px;
       left: -150px;
     }
   }
   &.mountain-5 {
     z-index: 20;
-    bottom: 17%;
+    top: 200px;
     left: 710px;
     border-radius: 18px;
     width: 250px;
@@ -178,8 +178,8 @@ div {
   z-index: 50;
   background-color: black;
   width: 100%;
-  bottom: 0;
-  top: 58%;
+  height: 600px;
+  top: 310px;
   border-top: 3px solid $darkrebecca;
   overflow: hidden;
   .road {
