@@ -1,0 +1,300 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: "Sarina";
+  background-color: black;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+div {
+  position: absolute; }
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.ride {
+  position: relative;
+  margin: 0 auto;
+  width: 915px;
+  height: 538px;
+  overflow: hidden;
+  border-left: 3px solid #402060;
+  border-right: 3px solid #402060; }
+
+.sky {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000072), color-stop(50%, #402060));
+  background: linear-gradient(to bottom, #000072, #402060 50%); }
+  .sky .scanline {
+    width: 100%;
+    height: 5px;
+    background-color: #402060;
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    opacity: 0.2; }
+    .sky .scanline:nth-child(1) {
+      top: 30px; }
+      .sky .scanline:nth-child(1)::before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -15px;
+        background-color: inherit; }
+    .sky .scanline:nth-child(2) {
+      top: 60px; }
+      .sky .scanline:nth-child(2)::before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -15px;
+        background-color: inherit; }
+    .sky .scanline:nth-child(3) {
+      top: 90px; }
+      .sky .scanline:nth-child(3)::before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -15px;
+        background-color: inherit; }
+    .sky .scanline:nth-child(4) {
+      top: 120px; }
+      .sky .scanline:nth-child(4)::before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -15px;
+        background-color: inherit; }
+    .sky .scanline:nth-child(5) {
+      top: 150px; }
+      .sky .scanline:nth-child(5)::before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -15px;
+        background-color: inherit; }
+    .sky .scanline:nth-child(6) {
+      top: 180px; }
+      .sky .scanline:nth-child(6)::before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -15px;
+        background-color: inherit; }
+    .sky .scanline:nth-child(7) {
+      top: 210px; }
+      .sky .scanline:nth-child(7)::before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -15px;
+        background-color: inherit; }
+    .sky .scanline:nth-child(8) {
+      top: 240px; }
+      .sky .scanline:nth-child(8)::before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -15px;
+        background-color: inherit; }
+    .sky .scanline:nth-child(9) {
+      top: 270px; }
+      .sky .scanline:nth-child(9)::before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -15px;
+        background-color: inherit; }
+    .sky .scanline:nth-child(10) {
+      top: 300px; }
+      .sky .scanline:nth-child(10)::before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -15px;
+        background-color: inherit; }
+
+.sun {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background: -webkit-gradient(linear, left top, left bottom, from(darkred), to(yellow));
+  background: linear-gradient(to bottom, darkred, yellow);
+  top: 25%;
+  left: 300px;
+  z-index: 10; }
+  .sun .scanline {
+    width: 100%;
+    background-color: #402060;
+    left: 0; }
+    .sun .scanline.scanline-1 {
+      height: 3.5px;
+      top: 99px; }
+    .sun .scanline.scanline-2 {
+      height: 7px;
+      top: 118px; }
+    .sun .scanline.scanline-3 {
+      height: 10.5px;
+      top: 137px; }
+    .sun .scanline.scanline-4 {
+      height: 14px;
+      top: 156px; }
+    .sun .scanline.scanline-5 {
+      height: 17.5px;
+      top: 175px; }
+
+.mountains {
+  width: 100%;
+  height: 100vh; }
+
+.mountain {
+  z-index: 20;
+  background-color: black;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  border: 4px solid #402060; }
+  .mountain::before, .mountain::after {
+    position: absolute;
+    color: white;
+    font-size: 0.1rem;
+    content: '.'; }
+  .mountain.mountain-1 {
+    bottom: 0;
+    left: -80px;
+    border-radius: 20px;
+    width: 350px;
+    height: 350px; }
+    .mountain.mountain-1::before {
+      top: -90px;
+      left: -90px; }
+    .mountain.mountain-1::after {
+      top: 10px;
+      left: -80px; }
+  .mountain.mountain-2 {
+    z-index: 30;
+    bottom: 20%;
+    left: 145px;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px; }
+    .mountain.mountain-2::before {
+      top: -150px;
+      left: -150px; }
+    .mountain.mountain-2::after {
+      top: -40px;
+      left: -130px; }
+  .mountain.mountain-3 {
+    z-index: 30;
+    bottom: 12%;
+    left: 450px;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px; }
+    .mountain.mountain-3::before {
+      top: -130px;
+      left: -100px; }
+    .mountain.mountain-3::after {
+      top: -60px;
+      left: -210px; }
+  .mountain.mountain-4 {
+    z-index: 30;
+    bottom: 25%;
+    left: 605px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px; }
+    .mountain.mountain-4::before {
+      top: -110px;
+      left: -80px; }
+    .mountain.mountain-4::after {
+      top: -200px;
+      left: -150px; }
+  .mountain.mountain-5 {
+    z-index: 20;
+    bottom: 17%;
+    left: 710px;
+    border-radius: 18px;
+    width: 250px;
+    height: 250px; }
+    .mountain.mountain-5::before {
+      top: -100px;
+      left: -88px; }
+    .mountain.mountain-5::after {
+      top: -30px;
+      left: -5px; }
+
+.ground {
+  z-index: 50;
+  background-color: black;
+  width: 100%;
+  bottom: 0;
+  top: 58%;
+  border-top: 3px solid #402060;
+  overflow: hidden; }
+  .ground .road {
+    height: 100%;
+    left: 180px;
+    top: -6px;
+    width: 600px;
+    height: 300px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#402060), to(black));
+    background: linear-gradient(to bottom, #402060, black);
+    border-top-left-radius: 60%;
+    border-bottom-left-radius: 50%; }
+    .ground .road::after {
+      content: ' ';
+      z-index: 55;
+      position: absolute;
+      top: -20px;
+      border-top-left-radius: 60%;
+      border-bottom-left-radius: 60%;
+      left: 100px;
+      width: 700px;
+      height: 250px;
+      background-color: black; }
+
+.text {
+  z-index: 100;
+  bottom: -10px;
+  right: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#402060), color-stop(90%, black));
+  background: linear-gradient(to bottom, #402060, black 90%);
+  width: 280px;
+  padding-left: 30px;
+  font-size: 6rem;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; }
+
+@media screen and (min-height: 539px) {
+  .ride {
+    border: 3px solid #402060; } }
+
+/*# sourceMappingURL=style.css.map */
